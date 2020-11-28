@@ -24,12 +24,12 @@ jobs:
     - run: npm i
     - name: sigga-app dir
       run: | 
-        cd sigga-app
+        cd ./sigga-app
     - name: test-read dir
       run: | 
-        cd test-read-file
+        cd ./test-read-file
     - name: test-read-file dir
       run: |
-        cd test-read-file
+        cd ./test-read-file
         run: ng build --prod
         run: cp -R dist/* /var/www/test
