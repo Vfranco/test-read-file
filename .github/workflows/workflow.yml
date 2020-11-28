@@ -23,11 +23,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: | 
-        cd sigga-app
+        cd /sigga-app
     - run: |
-        cd test-read-file
+        cd /test-read-file
     - run: |
-        cd test-read-file
+        cd /test-read-file
     - run: ng build --prod
     - run: |
         cp -R dist/* /var/www/test
