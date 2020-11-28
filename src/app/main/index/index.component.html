@@ -1,0 +1,26 @@
+<div class="chat-reader">
+	<div class="chat-reader__container">
+		<div class="chat-reader__title">
+			<span>Chat Resume | {{chatMessages.length}} messages</span>
+		</div>
+		<div class="chat-reader__message-container">
+			<div *ngIf="chatMessages.length === 0; then putFile else readFile"></div>
+			<ng-template #putFile>
+				<div class="chat-reader__start-reading" [hidden]="processing">
+					<label for="upload">Click here and choose file ...</label>
+					<input id="upload" type="file" (change)="startProcessFile($event)" [hidden]="true">
+				</div>
+				<div class="chat-reader__start-reading" [hidden]="!processing">Processing file ...</div>
+			</ng-template>
+			<ng-template #readFile>
+				<ng-container *ngFor="let chat of chatMessages">
+					<app-messages [message]="chat.text"></app-messages>
+				</ng-container>
+			</ng-template>
+		</div>
+		<div class="chat-reader__box-input">
+			<input type="text" class="chat-reader__text-box">
+			<button type="submit" class="chat-reader__send">Send</button>
+		</div>
+	</div>
+</div>

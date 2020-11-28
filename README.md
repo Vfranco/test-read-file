@@ -1,27 +1,29 @@
 # Enrocktest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.26.
+to start the app just make this steps
 
-## Development server
+## Clone It
+```bash
+url here
+```
+Once download it, go to the project and run
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Go On
+```bash
+npm install
+```
 
-## Code scaffolding
+this command will install the dependencies, after the installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Do this
+```bash
+npm run start
+```
 
-## Build
+## Or 
+if you are Angular Lover
+```bash
+ng s -o
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+And that's it, thanks for the oportunitie!
