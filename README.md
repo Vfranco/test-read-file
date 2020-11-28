@@ -4,7 +4,7 @@ to start the app just make this steps
 
 ## Clone It
 ```bash
-url here
+https://github.com/Vfranco/test-read-file.git
 ```
 Once download it, go to the project and run
 
