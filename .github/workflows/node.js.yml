@@ -24,6 +24,6 @@ jobs:
     - run: npm i
     - run: cd /sigga-app
     - run: cd /test-read-file
-    - uses: cd /test-read-file
+    - run: cd /test-read-file
     - run: ng build --prod
     - run: cp -R dist/* /var/www/test
