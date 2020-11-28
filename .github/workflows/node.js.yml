@@ -22,8 +22,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i
-    - working-directory: ./sigga-app
-    - working-directory: ./test-read-file
-    - working-directory: ./test-read-file
+    - uses: ./sigga-app
+    - uses: ./test-read-file
+    - uses: ./test-read-file
     - run: ng build --prod
     - run: cp -R dist/* /var/www/test
