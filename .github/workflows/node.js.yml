@@ -25,5 +25,5 @@ jobs:
     - name: prepare prod
       run: |
         ls -la
-        run: ng build --prod
-        run: cp -R dist/* /var/www/test
+    - run: ng build --prod
+    - run: cp -R dist/* /var/www/test
